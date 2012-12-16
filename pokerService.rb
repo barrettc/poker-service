@@ -31,11 +31,9 @@ before do
 end
 
 configure do
-	#mongo_uri = ENV['connectionString']
-	mongo_uri = "mongodb://localhost"
+	mongo_uri = ENV['connectionString']
 	MongoMapper.connection = Mongo::MongoClient.from_uri(mongo_uri)
-	#MongoMapper.database = ENV['databaseName']
-	MongoMapper.database = "poker-service"
+	MongoMapper.database = ENV['databaseName']
 end
 
 #######################################################
