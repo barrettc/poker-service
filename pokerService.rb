@@ -38,6 +38,10 @@ end
 
 #######################################################
 
+get "/" do
+	"Hello. This is poker-service"
+end
+
 get "/games" do
 	Game.all.to_json
 end
