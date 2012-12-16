@@ -2,7 +2,6 @@ require 'sinatra'
 require "sinatra/reloader" if development?
 require 'mongo_mapper'
 require 'json'
-require 'cgi'
 
 class User
 	include MongoMapper::Document
